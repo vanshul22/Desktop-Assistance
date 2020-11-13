@@ -1,0 +1,20 @@
+search - sapi5
+
+to see which voice we take 
+    print(voices[0].id)
+    print(voices[1].id)
+
+akhbarpadhke dikhao check
+
+
+
+Recognizer()
+        self.energy_threshold = 300  # minimum audio energy to consider for recording
+        self.dynamic_energy_threshold = True
+        self.dynamic_energy_adjustment_damping = 0.15
+        self.dynamic_energy_ratio = 1.5
+        self.pause_threshold = 0.8  # seconds of non-speaking audio before a phrase is considered complete
+        self.operation_timeout = None  # seconds after an internal operation (e.g., an API request) starts before it times out, or ``None`` for no timeout
+
+        self.phrase_threshold = 0.3  # minimum seconds of speaking audio before we consider the speaking audio a phrase - values below this are ignored (for filtering out clicks and pops)
+        self.non_speaking_duration = 0.5  # seconds of non-speaking audio to keep on both sides of the recording
