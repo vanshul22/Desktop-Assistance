@@ -87,10 +87,10 @@ def takecommand():
         print(f"You Said : {query}\n")
 
     except sr.UnknownValueError:
-        print("Google Speech Recognition could not Understand the Audio,\nUnknown Error!!!")
+        print("Google Speech Recognition could not Understand the Audio!!!")
 
     except sr.RequestError:
-        print("Couldn't Request Results from Google Speech Recognition,\nTurn on Data!!!")
+        print("Couldn't Request Results\nTurn on Your Internet Connection!!!")
 
     return query
 
