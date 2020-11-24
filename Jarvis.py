@@ -3,7 +3,7 @@ Project Name : Desktop Assistant.
 Author : Vanshul Kesharwani
 Date : 28/07/2020
 Language : Python 3.7.1
-Details : This is a Artificial Assistant for Voice Commands.
+Details : This is an Artificial Assistant for Voice Commands.
 version : 0.1
 """
 
@@ -27,7 +27,7 @@ import socket
 hello_list_1 = ["hi", "hello", "namaste", "hello", "hi", "namaste", "hola", "aloha"]
 
 
-# Taking speak language for program. From computer.
+# Taking speak language from computer.
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
@@ -35,7 +35,7 @@ engine.setProperty('voice', voices[1].id)
 
 def speak(audio):
     """
-    Take Argument as Text and speak that word by speaker.
+    Take Argument as Text and speak that word by speakers.
     """
     engine.say(audio)
     engine.runAndWait()
@@ -98,7 +98,6 @@ def takecommand():
 if __name__ == "__main__":
     
     wishme()
-    
     # if 1:
     while 1:
         query = takecommand().lower()
